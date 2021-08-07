@@ -15,7 +15,7 @@ keyword_processor = KeywordProcessor()
 keyword_processor.add_keyword('Big Apple', 'New York')
 keyword_processor.add_keyword('Bay Area')
 keywords_found1 = keyword_processor.extract_keywords('I love Big Apple and Bay Area.')
-print(keywords_found1)
+print('匹配结果:',keywords_found1)
 
 # 存在bug
 print('flashtext在中文字符串匹配存在的问题')
@@ -28,8 +28,9 @@ keyword_processor.add_keyword('打call')
 keyword_processor.add_keyword('奥运会')
 keywords_found3=keyword_processor.extract_keywords('我为在参加东京2021奥运会的中国运动员all打call.')
 print('flashtext匹配中英文混合字符串:',keywords_found3)
-print('改进之后.......')
 
+
+print('改进之后.......')
 myflash_text = MyFlashtext()
 myflash_text.add_keyword('Big Apple', 'New York')
 myflash_text.add_keyword('Bay Area')
